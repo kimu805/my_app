@@ -1,5 +1,8 @@
 import { useState } from "react"
 import { ColoredMessage } from "./components/ColoredMEssage"
+import { CssModules } from "./components/CssModules"
+import { StyledComponents } from "./components/StyledComponents"
+import { TailwindCss } from "./components/TailwindCSS"
 
 export const App = () => {
   console.log("レンダリング")
@@ -16,6 +19,12 @@ export const App = () => {
       <ColoredMessage color="pink">元気です！</ColoredMessage>
       <button onClick={onClickButton}>ボタン</button>
       <p>{num}</p>
+
+      <CssModules></CssModules>
+
+      <StyledComponents></StyledComponents>
+
+      <TailwindCss></TailwindCss>
     </>
   )
 }
